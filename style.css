@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #001d3d, #003566);
+}
+
+h1{
+    margin: 2rem;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.calculator{
+    border: 1px solid #af7eaf;
+    border-radius: 16px;
+    padding: 10px;
+    margin: 20px;
+    background: #000814;
+    box-shadow: 0px 3px 15px #f7ede24d;
+}
+
+input{
+    width: 400px;
+    padding: 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 0px 3px 12px #f7ede24d;
+    color: #fff;
+    font-size: 5rem;
+    text-align: right;
+    cursor: pointer;
+}
+input::placeholder{
+    color: #fff;
+}
+button{
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 20px;
+    font-size: 2rem;
+    text-align: center;
+    background: transparent;
+    color: #fff;
+    box-shadow: 0px 3px 15px #f7ede24d;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+button:hover{
+    background: #fff;
+    color: #000814;
+}
+
+.operator{
+    color: rgb(48, 241, 48);
+}
+.equalBtn{
+    color: #fff;
+    background: #880404;
+}
+.equalBtn:hover{
+    background: #fff;
+    color: #880404;
+}
+
+@media (max-width:470px){
+    html{
+        font-size: 8px;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+    .calculator{
+        padding: 7px;
+        margin: 10px;
+    }
+    input{
+        font-size: 3rem;
+        width: 250px;
+        padding: 15px;
+        margin: 7px;
+    }
+    button{
+        width: 40px;
+        height: 40px;
+        font-size: 1.4rem;
+        margin: 1.5rem;
+    }
+}
